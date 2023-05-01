@@ -12,7 +12,7 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/attaches_to
 :attaches_to rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
              owl:inverseOf :enables_attachment ;
@@ -20,82 +20,82 @@
              rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries
 :carries rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_cmos_battery
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_cmos_battery
 :carries_cmos_battery rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :carries ;
                       rdfs:domain :Case ;
                       rdfs:range :CMOS_battery .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_cooler
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_cooler
 :carries_cooler rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :carries ;
                 rdfs:domain :Case ;
                 rdfs:range :Cooler .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_cpu
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_cpu
 :carries_cpu rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :carries ;
              rdfs:domain :Case ;
              rdfs:range :CPU .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_gpu
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_gpu
 :carries_gpu rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :carries ;
              rdfs:domain :Case ;
              rdfs:range :GPU .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_hard_disk
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_hard_disk
 :carries_hard_disk rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf :carries ;
                    rdfs:domain :Case ;
                    rdfs:range :Hard_disk .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_motherboard
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_motherboard
 :carries_motherboard rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :carries ;
                      rdfs:domain :Case ;
                      rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_network_card
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_network_card
 :carries_network_card rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :carries ;
                       rdfs:domain :Case ;
                       rdfs:range :Network_card .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_power_supply
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_power_supply
 :carries_power_supply rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :carries ;
                       rdfs:domain :Case ;
                       rdfs:range :Power_supply .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_ram
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_ram
 :carries_ram rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :carries ;
              rdfs:domain :Case ;
              rdfs:range :RAM .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#carries_sound_card
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries_sound_card
 :carries_sound_card rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :carries ;
                     rdfs:domain :Case ;
                     rdfs:range :Sound_card .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cmos_battery_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cmos_battery_attaches_to
 :cmos_battery_attaches_to rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :attaches_to ;
                           owl:inverseOf :enables_attachments_cmos_battery ;
@@ -103,7 +103,7 @@
                           rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cooler_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cooler_attaches_to
 :cooler_attaches_to rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :attaches_to ;
                     owl:inverseOf :enables_attachments_cooler ;
@@ -111,7 +111,7 @@
                     rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cpu_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cpu_attaches_to
 :cpu_attaches_to rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :attaches_to ;
                  owl:inverseOf :enables_attachments_cpu ;
@@ -119,38 +119,38 @@
                  rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cpu_has_cache
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cpu_has_cache
 :cpu_has_cache rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :has_cache .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachment
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachment
 :enables_attachment rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_cmos_battery
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_cmos_battery
 :enables_attachments_cmos_battery rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf :enables_attachment ;
                                   rdfs:domain :Motherboard ;
                                   rdfs:range :CMOS_battery .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_cooler
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_cooler
 :enables_attachments_cooler rdf:type owl:ObjectProperty ;
                             rdfs:subPropertyOf :enables_attachment ;
                             rdfs:domain :Motherboard ;
                             rdfs:range :Cooler .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_cpu
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_cpu
 :enables_attachments_cpu rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :enables_attachment ;
                          rdfs:domain :Motherboard ;
                          rdfs:range :CPU .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_gpu
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_gpu
 :enables_attachments_gpu rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :enables_attachment ;
                          owl:inverseOf :gpu_attaches_to ;
@@ -158,7 +158,7 @@
                          rdfs:range :GPU .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_hard_disk
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_hard_disk
 :enables_attachments_hard_disk rdf:type owl:ObjectProperty ;
                                rdfs:subPropertyOf :enables_attachment ;
                                owl:inverseOf :hard_disk_attaches_to ;
@@ -166,7 +166,7 @@
                                rdfs:range :Hard_disk .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_network_card
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_network_card
 :enables_attachments_network_card rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf :enables_attachment ;
                                   owl:inverseOf :network_card_attaches_to ;
@@ -174,7 +174,7 @@
                                   rdfs:range :Network_card .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_power_supply
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_power_supply
 :enables_attachments_power_supply rdf:type owl:ObjectProperty ;
                                   rdfs:subPropertyOf :enables_attachment ;
                                   owl:inverseOf :power_supply_attaches_to ;
@@ -182,7 +182,7 @@
                                   rdfs:range :Power_supply .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_ram
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_ram
 :enables_attachments_ram rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :enables_attachment ;
                          owl:inverseOf :ram_attaches_to ;
@@ -190,7 +190,7 @@
                          rdfs:range :RAM .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#enables_attachments_sound_card
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/enables_attachments_sound_card
 :enables_attachments_sound_card rdf:type owl:ObjectProperty ;
                                 rdfs:subPropertyOf :enables_attachment ;
                                 owl:inverseOf :sound_card_attaches_to ;
@@ -198,62 +198,62 @@
                                 rdfs:range :Sound_card .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_attaches_to
 :gpu_attaches_to rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :attaches_to ;
                  rdfs:domain :GPU ;
                  rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_has_port
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_has_port
 :gpu_has_port rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :has_port .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#hard_disk_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/hard_disk_attaches_to
 :hard_disk_attaches_to rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :attaches_to ;
                        rdfs:domain :Hard_disk ;
                        rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#has_cache
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/has_cache
 :has_cache rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#has_port
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/has_port
 :has_port rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#has_socket
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/has_socket
 :has_socket rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf owl:topObjectProperty .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#network_card_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/network_card_attaches_to
 :network_card_attaches_to rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :attaches_to ;
                           rdfs:domain :Network_card ;
                           rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#power_supply_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/power_supply_attaches_to
 :power_supply_attaches_to rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :attaches_to ;
                           rdfs:domain :Power_supply ;
                           rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ram_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_attaches_to
 :ram_attaches_to rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :attaches_to ;
                  rdfs:domain :RAM ;
                  rdfs:range :Motherboard .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#sound_card_attaches_to
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/sound_card_attaches_to
 :sound_card_attaches_to rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :attaches_to ;
                         rdfs:domain :Sound_card ;
@@ -264,210 +264,210 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#chipset_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/chipset_has_name
 :chipset_has_name rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain :Chipset ;
                   rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cooler_has_fan_size
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cooler_has_fan_size
 :cooler_has_fan_size rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :Cooler ;
                      rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cooler_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cooler_has_name
 :cooler_has_name rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :Cooler ;
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cooler_has_speed
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cooler_has_speed
 :cooler_has_speed rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain :Cooler ;
                   rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cooler_has_voltage
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cooler_has_voltage
 :cooler_has_voltage rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
                     rdfs:domain :Cooler ;
                     rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cpu_has_cores
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cpu_has_cores
 :cpu_has_cores rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :CPU ;
                rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cpu_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cpu_has_name
 :cpu_has_name rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :CPU ;
               rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cpu_has_speed
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cpu_has_speed
 :cpu_has_speed rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :CPU ;
                rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cpu_has_threads
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cpu_has_threads
 :cpu_has_threads rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :CPU ;
                  rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_has_memory
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_has_memory
 :gpu_has_memory rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :GPU ;
                 rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_has_name
 :gpu_has_name rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :GPU ;
               rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_has_speed
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_has_speed
 :gpu_has_speed rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :GPU ;
                rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_has_video_memory
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_has_video_memory
 :gpu_has_video_memory rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain :GPU ;
                       rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_library_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_library_has_name
 :gpu_library_has_name rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain :GPU_library ;
                       rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#gpu_library_has_version
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/gpu_library_has_version
 :gpu_library_has_version rdf:type owl:DatatypeProperty ;
                          rdfs:subPropertyOf owl:topDataProperty ;
                          rdfs:domain :GPU_library ;
                          rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#hard_disk_has_memory
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/hard_disk_has_memory
 :hard_disk_has_memory rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain :Hard_disk ;
                       rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#hard_disk_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/hard_disk_has_name
 :hard_disk_has_name rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
                     rdfs:domain :Hard_disk ;
                     rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#hard_disk_has_speed
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/hard_disk_has_speed
 :hard_disk_has_speed rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :Hard_disk ;
                      rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#manufacturer_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/manufacturer_has_name
 :manufacturer_has_name rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Manufacturer ;
                        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#network_card_has_interface
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/network_card_has_interface
 :network_card_has_interface rdf:type owl:DatatypeProperty ;
                             rdfs:subPropertyOf owl:topDataProperty ;
                             rdfs:domain :Network_card ;
                             rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#network_card_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/network_card_has_name
 :network_card_has_name rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Network_card ;
                        rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#port_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/port_has_name
 :port_has_name rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :Port ;
                rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ram_has_memory
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_has_memory
 :ram_has_memory rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty ;
                 rdfs:domain :RAM ;
                 rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ram_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_has_name
 :ram_has_name rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :RAM ;
               rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ram_has_speed
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_has_speed
 :ram_has_speed rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :RAM ;
                rdfs:range xsd:decimal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ram_has_type
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_has_type
 :ram_has_type rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :RAM ;
               rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ram_has_voltage
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_has_voltage
 :ram_has_voltage rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :RAM ;
                  rdfs:range xsd:integer .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#sound_card_has_interface
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/sound_card_has_interface
 :sound_card_has_interface rdf:type owl:DatatypeProperty ;
                           rdfs:subPropertyOf owl:topDataProperty ;
                           rdfs:domain :Sound_card ;
                           rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#sound_card_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/sound_card_has_name
 :sound_card_has_name rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdfs:domain :Sound_card ;
                      rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#sound_card_has_speed
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/sound_card_has_speed
 :sound_card_has_speed rdf:type owl:DatatypeProperty ;
                       rdfs:subPropertyOf owl:topDataProperty ;
                       rdfs:domain :Sound_card ;
@@ -478,147 +478,332 @@
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Bus
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BiDirectionalMicrophone
+:BiDirectionalMicrophone rdf:type owl:Class ;
+                         rdfs:subClassOf :Microphone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BluetoothHeadphones
+:BluetoothHeadphones rdf:type owl:Class ;
+                     rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CardioidMicrophone
+:CardioidMicrophone rdf:type owl:Class ;
+                    rdfs:subClassOf :Microphone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ClosedBackMicrophone
+:ClosedBackMicrophone rdf:type owl:Class ;
+                      rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ErgonomicKeyboard
+:ErgonomicKeyboard rdf:type owl:Class ;
+                   rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#External
+:External rdf:type owl:Class ;
+          rdfs:subClassOf :Hardware .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#FlexibleKeyboard
+:FlexibleKeyboard rdf:type owl:Class ;
+                  rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Headphones
+:Headphones rdf:type owl:Class ;
+            rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#IPCamera
+:IPCamera rdf:type owl:Class ;
+          rdfs:subClassOf :Camera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#InEarHeadphones
+:InEarHeadphones rdf:type owl:Class ;
+                 rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#InjektPrinter
+:InjektPrinter rdf:type owl:Class ;
+               rdfs:subClassOf :Printer .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Keyboard
+:Keyboard rdf:type owl:Class ;
+          rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LED
+:LED rdf:type owl:Class ;
+     rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LaserPrinter
+:LaserPrinter rdf:type owl:Class ;
+              rdfs:subClassOf :Printer .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MechanicalKeyboard
+:MechanicalKeyboard rdf:type owl:Class ;
+                    rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MembraneKeyboard
+:MembraneKeyboard rdf:type owl:Class ;
+                  rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Monitor
+:Monitor rdf:type owl:Class ;
+         rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Mouse
+:Mouse rdf:type owl:Class ;
+       rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MultimediaKeyboard
+:MultimediaKeyboard rdf:type owl:Class ;
+                    rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OLED
+:OLED rdf:type owl:Class ;
+      rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OmniDirectionalMicrophone
+:OmniDirectionalMicrophone rdf:type owl:Class ;
+                           rdfs:subClassOf :Microphone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OnEarHeadphones
+:OnEarHeadphones rdf:type owl:Class ;
+                 rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OpenBlackHeadphones
+:OpenBlackHeadphones rdf:type owl:Class ;
+                     rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OverEarHeadphones
+:OverEarHeadphones rdf:type owl:Class ;
+                   rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Printer
+:Printer rdf:type owl:Class ;
+         rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ProjectionKeyboard
+:ProjectionKeyboard rdf:type owl:Class ;
+                    rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Regular
+:Regular rdf:type owl:Class ;
+         rdfs:subClassOf :USBFlashDrive .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Security
+:Security rdf:type owl:Class ;
+          rdfs:subClassOf :USBFlashDrive .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#StandaloneCamera
+:StandaloneCamera rdf:type owl:Class ;
+                  rdfs:subClassOf :Camera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#USBFlashDrive
+:USBFlashDrive rdf:type owl:Class ;
+               rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#USBMouse
+:USBMouse rdf:type owl:Class ;
+          rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#WirelessKeyboard
+:WirelessKeyboard rdf:type owl:Class ;
+                  rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#WirelessMouse
+:WirelessMouse rdf:type owl:Class ;
+               rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#WithMicrophoneCamera
+:WithMicrophoneCamera rdf:type owl:Class ;
+                      rdfs:subClassOf :Camera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse
+<http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Bus
 :Bus rdf:type owl:Class ;
      rdfs:subClassOf :CPU_components .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CMOS_battery
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CMOS_battery
 :CMOS_battery rdf:type owl:Class ;
               rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CPU
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CPU
 :CPU rdf:type owl:Class ;
      rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CPU_components
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CPU_components
 :CPU_components rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Cache
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Cache
 :Cache rdf:type owl:Class ;
        rdfs:subClassOf :CPU_components .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Case
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Case
 :Case rdf:type owl:Class ;
       rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Chipset
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Chipset
 :Chipset rdf:type owl:Class ;
          rdfs:subClassOf :Motherboard_components .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Clock
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Clock
 :Clock rdf:type owl:Class ;
        rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Control_unit
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Control_unit
 :Control_unit rdf:type owl:Class ;
               rdfs:subClassOf :CPU_components .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Cooler
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Cooler
 :Cooler rdf:type owl:Class ;
         rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GPU
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GPU
 :GPU rdf:type owl:Class ;
      rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GPU_components
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GPU_components
 :GPU_components rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GPU_library
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GPU_library
 :GPU_library rdf:type owl:Class ;
              rdfs:subClassOf :GPU_components .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GPU_port
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GPU_port
 :GPU_port rdf:type owl:Class ;
           rdfs:subClassOf :Port .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#HDD
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/HDD
 :HDD rdf:type owl:Class ;
      rdfs:subClassOf :Hard_disk .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Hard_disk
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Hard_disk
 :Hard_disk rdf:type owl:Class ;
            rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Hardware
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Hardware
 :Hardware rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Internal
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Internal
 :Internal rdf:type owl:Class ;
           rdfs:subClassOf :Hardware .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Manufacturer
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Manufacturer
 :Manufacturer rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Motherboard
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Motherboard
 :Motherboard rdf:type owl:Class ;
              rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Motherboard_components
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Motherboard_components
 :Motherboard_components rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Motherboard_port
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Motherboard_port
 :Motherboard_port rdf:type owl:Class ;
                   rdfs:subClassOf :Port .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Network_card
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Network_card
 :Network_card rdf:type owl:Class ;
               rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Port
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Port
 :Port rdf:type owl:Class ;
       rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Power_supply
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Power_supply
 :Power_supply rdf:type owl:Class ;
               rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#RAM
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/RAM
 :RAM rdf:type owl:Class ;
      rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Register
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Register
 :Register rdf:type owl:Class ;
           rdfs:subClassOf :CPU_components .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SDD
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SDD
 :SDD rdf:type owl:Class ;
      rdfs:subClassOf :Hard_disk .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Socket
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Socket
 :Socket rdf:type owl:Class ;
         rdfs:subClassOf :Internal .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Sound_card
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Sound_card
 :Sound_card rdf:type owl:Class ;
             rdfs:subClassOf :Internal .
 
@@ -627,35 +812,35 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd
 :Amd rdf:type owl:NamedIndividual ,
               :Manufacturer ;
      :manufacturer_has_name "Advanced Micro Devices, Inc." .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_29030
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_29030
 :Amd_29030 rdf:type owl:NamedIndividual .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Gigabyte
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Gigabyte
 :Gigabyte rdf:type owl:NamedIndividual ,
                    :Manufacturer ;
           :manufacturer_has_name "gigabyte technology" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel
 :Intel rdf:type owl:NamedIndividual ,
                 :Manufacturer ;
        :manufacturer_has_name "Intel Corporation" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Kingstone
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingstone
 :Kingstone rdf:type owl:NamedIndividual ,
                     :Manufacturer ;
            :manufacturer_has_name "Kingston Technology" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Nvidia
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Nvidia
 :Nvidia rdf:type owl:NamedIndividual ,
                  :Manufacturer ;
         :manufacturer_has_name "NVIDIA Corporation" .

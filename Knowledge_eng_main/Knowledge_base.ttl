@@ -20,6 +20,11 @@
              rdfs:range :Motherboard .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/camera_is_connected_to
+:camera_is_connected_to rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :is_connected_to .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/carries
 :carries rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf owl:topObjectProperty .
@@ -232,6 +237,35 @@
             rdfs:subPropertyOf owl:topObjectProperty .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/headphones_are_connected_to
+:headphones_are_connected_to rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :is_connected_to .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/is_connected_to
+:is_connected_to rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/keyboard_is_connected_to
+:keyboard_is_connected_to rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :is_connected_to .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/microphone_is_connected_to
+:microphone_is_connected_to rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :is_connected_to .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/monitor_is_connected_to
+:monitor_is_connected_to rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :is_connected_to .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/mouse_is_connected_to
+:mouse_is_connected_to rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :is_connected_to .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/network_card_attaches_to
 :network_card_attaches_to rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :attaches_to ;
@@ -244,6 +278,11 @@
                           rdfs:subPropertyOf :attaches_to ;
                           rdfs:domain :Power_supply ;
                           rdfs:range :Motherboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/printer_is_connected_to
+:printer_is_connected_to rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :is_connected_to .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_attaches_to
@@ -264,152 +303,18 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#camera_has_name
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/camera_has_name
 :camera_has_name rdf:type owl:DatatypeProperty ;
                  rdfs:subPropertyOf owl:topDataProperty ;
                  rdfs:domain :Camera ;
                  rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#camera_has_resolution
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/camera_has_resolution
 :camera_has_resolution rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Camera ;
                        rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#headphones_have_microphone
-:headphones_have_microphone rdf:type owl:DatatypeProperty ;
-                            rdfs:subPropertyOf owl:topDataProperty ;
-                            rdfs:domain :Headphones ;
-                            rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#headphones_have_name
-:headphones_have_name rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain :Headphones ;
-                      rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#keyboard_has_feedback_click
-:keyboard_has_feedback_click rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf owl:topDataProperty ;
-                             rdfs:domain :Keyboard ;
-                             rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#keyboard_has_layout
-:keyboard_has_layout rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain :Keyboard ;
-                     rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#keyboard_has_name
-:keyboard_has_name rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
-                   rdfs:domain :Keyboard ;
-                   rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#keyboard_has_size
-:keyboard_has_size rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
-                   rdfs:domain :Keyboard ;
-                   rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#microphone_has_audio_sensitivity
-:microphone_has_audio_sensitivity rdf:type owl:DatatypeProperty ;
-                                  rdfs:subPropertyOf owl:topDataProperty ;
-                                  rdfs:domain :Microphone ;
-                                  rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#microphone_has_name
-:microphone_has_name rdf:type owl:DatatypeProperty ;
-                     rdfs:subPropertyOf owl:topDataProperty ;
-                     rdfs:domain :Microphone ;
-                     rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#monitor_has_name
-:monitor_has_name rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
-                  rdfs:domain :Monitor ;
-                  rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#monitor_has_resolution
-:monitor_has_resolution rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :Monitor ;
-                        rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#monitor_has_size
-:monitor_has_size rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
-                  rdfs:domain :Monitor ;
-                  rdfs:range xsd:int ,
-                             xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#mouse_has_buttons
-:mouse_has_buttons rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
-                   rdfs:domain :Mouse ;
-                   rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#mouse_has_name
-:mouse_has_name rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :Mouse ;
-                rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#mouse_uses_led
-:mouse_uses_led rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
-                rdfs:domain :Mouse ;
-                rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#printer_has_all_in_one
-:printer_has_all_in_one rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :Printer ;
-                        rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#printer_has_name
-:printer_has_name rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
-                  rdfs:domain :Printer ;
-                  rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#printer_has_wire
-:printer_has_wire rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf owl:topDataProperty ;
-                  rdfs:domain :Printer ;
-                  rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#usbflashdrive_has_memory
-:usbflashdrive_has_memory rdf:type owl:DatatypeProperty ;
-                          rdfs:subPropertyOf owl:topDataProperty ;
-                          rdfs:domain :USBFlashDrive ;
-                          rdfs:range xsd:int .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#usbflashdrive_has_name
-:usbflashdrive_has_name rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf owl:topDataProperty ;
-                        rdfs:domain :USBFlashDrive ;
-                        rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/chipset_has_name
@@ -538,11 +443,110 @@
                      rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/headphones_have_microphone
+:headphones_have_microphone rdf:type owl:DatatypeProperty ;
+                            rdfs:subPropertyOf owl:topDataProperty ;
+                            rdfs:domain :Headphones ;
+                            rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/headphones_have_name
+:headphones_have_name rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :Headphones ;
+                      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/keyboard_has_feedback_click
+:keyboard_has_feedback_click rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf owl:topDataProperty ;
+                             rdfs:domain :Keyboard ;
+                             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/keyboard_has_layout
+:keyboard_has_layout rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Keyboard ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/keyboard_has_name
+:keyboard_has_name rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Keyboard ;
+                   rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/keyboard_has_size
+:keyboard_has_size rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Keyboard ;
+                   rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/manufacturer_has_name
 :manufacturer_has_name rdf:type owl:DatatypeProperty ;
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Manufacturer ;
                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/microphone_has_audio_sensitivity
+:microphone_has_audio_sensitivity rdf:type owl:DatatypeProperty ;
+                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                  rdfs:domain :Microphone ;
+                                  rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/microphone_has_name
+:microphone_has_name rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Microphone ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/monitor_has_name
+:monitor_has_name rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Monitor ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/monitor_has_resolution
+:monitor_has_resolution rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :Monitor ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/monitor_has_size
+:monitor_has_size rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Monitor ;
+                  rdfs:range xsd:int ,
+                             xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/mouse_has_buttons
+:mouse_has_buttons rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Mouse ;
+                   rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/mouse_has_name
+:mouse_has_name rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Mouse ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/mouse_uses_led
+:mouse_uses_led rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Mouse ;
+                rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/network_card_has_interface
@@ -564,6 +568,27 @@
                rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :Port ;
                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/printer_has_all_in_one
+:printer_has_all_in_one rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :Printer ;
+                        rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/printer_has_name
+:printer_has_name rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Printer ;
+                  rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/printer_has_wire
+:printer_has_wire rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Printer ;
+                  rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ram_has_memory
@@ -622,193 +647,37 @@
                       rdfs:range xsd:decimal .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/usbflashdrive_has_memory
+:usbflashdrive_has_memory rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :USBFlashDrive ;
+                          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/usbflashdrive_has_name
+:usbflashdrive_has_name rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :USBFlashDrive ;
+                        rdfs:range xsd:string .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BiDirectionalMicrophone
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse
+<http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/BiDirectionalMicrophone
 :BiDirectionalMicrophone rdf:type owl:Class ;
                          rdfs:subClassOf :Microphone .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BluetoothHeadphones
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/BluetoothHeadphones
 :BluetoothHeadphones rdf:type owl:Class ;
                      rdfs:subClassOf :Headphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Camera
-:Camera rdf:type owl:Class ;
-        rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CardioidMicrophone
-:CardioidMicrophone rdf:type owl:Class ;
-                    rdfs:subClassOf :Microphone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ClosedBackMicrophone
-:ClosedBackMicrophone rdf:type owl:Class ;
-                      rdfs:subClassOf :Headphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ErgonomicKeyboard
-:ErgonomicKeyboard rdf:type owl:Class ;
-                   rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#External
-:External rdf:type owl:Class ;
-          rdfs:subClassOf :Hardware .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#FlexibleKeyboard
-:FlexibleKeyboard rdf:type owl:Class ;
-                  rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Headphones
-:Headphones rdf:type owl:Class ;
-            rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#IPCamera
-:IPCamera rdf:type owl:Class ;
-          rdfs:subClassOf :Camera .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#InEarHeadphones
-:InEarHeadphones rdf:type owl:Class ;
-                 rdfs:subClassOf :Headphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#InjektPrinter
-:InjektPrinter rdf:type owl:Class ;
-               rdfs:subClassOf :Printer .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Keyboard
-:Keyboard rdf:type owl:Class ;
-          rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LED
-:LED rdf:type owl:Class ;
-     rdfs:subClassOf :Monitor .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LaserPrinter
-:LaserPrinter rdf:type owl:Class ;
-              rdfs:subClassOf :Printer .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MechanicalKeyboard
-:MechanicalKeyboard rdf:type owl:Class ;
-                    rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MembraneKeyboard
-:MembraneKeyboard rdf:type owl:Class ;
-                  rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Microphone
-:Microphone rdf:type owl:Class ;
-            rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Monitor
-:Monitor rdf:type owl:Class ;
-         rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Mouse
-:Mouse rdf:type owl:Class ;
-       rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MultimediaKeyboard
-:MultimediaKeyboard rdf:type owl:Class ;
-                    rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OLED
-:OLED rdf:type owl:Class ;
-      rdfs:subClassOf :Monitor .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OmniDirectionalMicrophone
-:OmniDirectionalMicrophone rdf:type owl:Class ;
-                           rdfs:subClassOf :Microphone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OnEarHeadphones
-:OnEarHeadphones rdf:type owl:Class ;
-                 rdfs:subClassOf :Headphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OpenBlackHeadphones
-:OpenBlackHeadphones rdf:type owl:Class ;
-                     rdfs:subClassOf :Headphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OverEarHeadphones
-:OverEarHeadphones rdf:type owl:Class ;
-                   rdfs:subClassOf :Headphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Printer
-:Printer rdf:type owl:Class ;
-         rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ProjectionKeyboard
-:ProjectionKeyboard rdf:type owl:Class ;
-                    rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Regular
-:Regular rdf:type owl:Class ;
-         rdfs:subClassOf :USBFlashDrive .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Security
-:Security rdf:type owl:Class ;
-          rdfs:subClassOf :USBFlashDrive .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#StandaloneCamera
-:StandaloneCamera rdf:type owl:Class ;
-                  rdfs:subClassOf :Camera .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#USBFlashDrive
-:USBFlashDrive rdf:type owl:Class ;
-               rdfs:subClassOf :External .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#USBMouse
-:USBMouse rdf:type owl:Class ;
-          rdfs:subClassOf :Mouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#WirelessKeyboard
-:WirelessKeyboard rdf:type owl:Class ;
-                  rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#WirelessMouse
-:WirelessMouse rdf:type owl:Class ;
-               rdfs:subClassOf :Mouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#WithMicrophoneCamera
-:WithMicrophoneCamera rdf:type owl:Class ;
-                      rdfs:subClassOf :Camera .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse
-<http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> rdf:type owl:Class ;
-                                                                                rdfs:subClassOf :Mouse .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Bus
@@ -835,6 +704,16 @@
        rdfs:subClassOf :CPU_components .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CardioidMicrophone
+:CardioidMicrophone rdf:type owl:Class ;
+                    rdfs:subClassOf :Microphone .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Case
 :Case rdf:type owl:Class ;
       rdfs:subClassOf :Internal .
@@ -850,6 +729,11 @@
        rdfs:subClassOf :Internal .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ClosedBackMicrophone
+:ClosedBackMicrophone rdf:type owl:Class ;
+                      rdfs:subClassOf :Headphones .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Control_unit
 :Control_unit rdf:type owl:Class ;
               rdfs:subClassOf :CPU_components .
@@ -858,6 +742,21 @@
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Cooler
 :Cooler rdf:type owl:Class ;
         rdfs:subClassOf :Internal .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ErgonomicKeyboard
+:ErgonomicKeyboard rdf:type owl:Class ;
+                   rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/External
+:External rdf:type owl:Class ;
+          rdfs:subClassOf :Hardware .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/FlexibleKeyboard
+:FlexibleKeyboard rdf:type owl:Class ;
+                  rdfs:subClassOf :Keyboard .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GPU
@@ -893,13 +792,68 @@
 :Hardware rdf:type owl:Class .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Headphones
+:Headphones rdf:type owl:Class ;
+            rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/IPCamera
+:IPCamera rdf:type owl:Class ;
+          rdfs:subClassOf :Camera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/InEarHeadphones
+:InEarHeadphones rdf:type owl:Class ;
+                 rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/InjektPrinter
+:InjektPrinter rdf:type owl:Class ;
+               rdfs:subClassOf :Printer .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Internal
 :Internal rdf:type owl:Class ;
           rdfs:subClassOf :Hardware .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Keyboard
+:Keyboard rdf:type owl:Class ;
+          rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LED
+:LED rdf:type owl:Class ;
+     rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LaserPrinter
+:LaserPrinter rdf:type owl:Class ;
+              rdfs:subClassOf :Printer .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Manufacturer
 :Manufacturer rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MechanicalKeyboard
+:MechanicalKeyboard rdf:type owl:Class ;
+                    rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MembraneKeyboard
+:MembraneKeyboard rdf:type owl:Class ;
+                  rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Monitor
+:Monitor rdf:type owl:Class ;
+         rdfs:subClassOf :External .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Motherboard
@@ -916,9 +870,44 @@
                   rdfs:subClassOf :Port .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Mouse
+:Mouse rdf:type owl:Class ;
+       rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MultimediaKeyboard
+:MultimediaKeyboard rdf:type owl:Class ;
+                    rdfs:subClassOf :Keyboard .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Network_card
 :Network_card rdf:type owl:Class ;
               rdfs:subClassOf :Internal .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/OLED
+:OLED rdf:type owl:Class ;
+      rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/OmniDirectionalMicrophone
+:OmniDirectionalMicrophone rdf:type owl:Class ;
+                           rdfs:subClassOf :Microphone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/OnEarHeadphones
+:OnEarHeadphones rdf:type owl:Class ;
+                 rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/OpenBlackHeadphones
+:OpenBlackHeadphones rdf:type owl:Class ;
+                     rdfs:subClassOf :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/OverEarHeadphones
+:OverEarHeadphones rdf:type owl:Class ;
+                   rdfs:subClassOf :Headphones .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Port
@@ -931,6 +920,16 @@
               rdfs:subClassOf :Internal .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Printer
+:Printer rdf:type owl:Class ;
+         rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ProjectionKeyboard
+:ProjectionKeyboard rdf:type owl:Class ;
+                    rdfs:subClassOf :Keyboard .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/RAM
 :RAM rdf:type owl:Class ;
      rdfs:subClassOf :Internal .
@@ -941,9 +940,19 @@
           rdfs:subClassOf :CPU_components .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Regular
+:Regular rdf:type owl:Class ;
+         rdfs:subClassOf :USBFlashDrive .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SDD
 :SDD rdf:type owl:Class ;
      rdfs:subClassOf :Hard_disk .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Security
+:Security rdf:type owl:Class ;
+          rdfs:subClassOf :USBFlashDrive .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Socket
@@ -956,293 +965,107 @@
             rdfs:subClassOf :Internal .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/StandaloneCamera
+:StandaloneCamera rdf:type owl:Class ;
+                  rdfs:subClassOf :Camera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/USBFlashDrive
+:USBFlashDrive rdf:type owl:Class ;
+               rdfs:subClassOf :External .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/USBMouse
+:USBMouse rdf:type owl:Class ;
+          rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/WirelessKeyboard
+:WirelessKeyboard rdf:type owl:Class ;
+                  rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/WirelessMouse
+:WirelessMouse rdf:type owl:Class ;
+               rdfs:subClassOf :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/WithMicrophoneCamera
+:WithMicrophoneCamera rdf:type owl:Class ;
+                      rdfs:subClassOf :Camera .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ADESSO_SLIMTOUCH_232_Keyboard
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ADESSO_SLIMTOUCH_232_Keyboard
 :ADESSO_SLIMTOUCH_232_Keyboard rdf:type owl:NamedIndividual ,
-                                        :FlexibleKeyboard .
+                                        :FlexibleKeyboard ;
+                               :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                               :keyboard_has_layout "QWERTY" ;
+                               :keyboard_has_name "ADESSO SLIMTOUCH" ;
+                               :keyboard_has_size "18x0.43" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AGS_LASER_Keyboard
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AGS_LASER_Keyboard
 :AGS_LASER_Keyboard rdf:type owl:NamedIndividual ,
-                             :ProjectionKeyboard .
+                             :ProjectionKeyboard ;
+                    :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                    :keyboard_has_layout "QWERTY" ;
+                    :keyboard_has_name "AGS_LASER" ;
+                    :keyboard_has_size 0 .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AIRHUG_2K_Camera
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AIRHUG_2K_Camera
 :AIRHUG_2K_Camera rdf:type owl:NamedIndividual ,
-                           :StandaloneCamera .
+                           :StandaloneCamera ;
+                  :camera_has_name "AIRHUG 2K" ;
+                  :camera_has_resolution 4 .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMCREST_TURRENT_Camera
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMCREST_TURRENT_Camera
 :AMCREST_TURRENT_Camera rdf:type owl:NamedIndividual ,
-                                 :IPCamera .
+                                 :IPCamera ;
+                        :camera_has_name "IP5M-T11179EW" ;
+                        :camera_has_resolution 5 .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#APRICORN_AEGIS_NX_USBFlashDrive
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/APRICORN_AEGIS_NX_USBFlashDrive
 :APRICORN_AEGIS_NX_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                          :Security .
+                                          :Security ;
+                                 :usbflashdrive_has_memory 128 ;
+                                 :usbflashdrive_has_name "APRICORN AEGIS SEURE KEY 3" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ARTECK_HB192_Keyboard
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ARTECK_HB192_Keyboard
 :ARTECK_HB192_Keyboard rdf:type owl:NamedIndividual ,
-                                :WirelessKeyboard .
+                                :WirelessKeyboard ;
+                       :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                       :keyboard_has_layout "QWERTY" ;
+                       :keyboard_has_name "ARTECK HB 192" ;
+                       :keyboard_has_size "16.9X4.9" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AUDIO_TECHNICA_ATH_AD700X_Headphones
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AUDIO_TECHNICA_ATH_AD700X_Headphones
 :AUDIO_TECHNICA_ATH_AD700X_Headphones rdf:type owl:NamedIndividual ,
-                                               :OpenBlackHeadphones .
+                                               :OpenBlackHeadphones ;
+                                      :headphones_have_microphone "true"^^xsd:boolean ;
+                                      :headphones_have_name "AUDIOTECHNICA ATH-AD700X" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AUDIO_TECHNICA_ATH_M30X_Headphones
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AUDIO_TECHNICA_ATH_M30X_Headphones
 :AUDIO_TECHNICA_ATH_M30X_Headphones rdf:type owl:NamedIndividual ,
-                                             :ClosedBackMicrophone .
+                                             :ClosedBackMicrophone ;
+                                    :headphones_have_microphone "true"^^xsd:boolean ;
+                                    :headphones_have_name "ADUIOTECHNICA ATH M30X" .
 
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AVMP_4K_Camera
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AVMP_4K_Camera
 :AVMP_4K_Camera rdf:type owl:NamedIndividual ,
-                         :WithMicrophoneCamera .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BEATS_SOLO_3_Headphones
-:BEATS_SOLO_3_Headphones rdf:type owl:NamedIndividual ,
-                                  :OnEarHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BEYERDYNAMIC_DT_990_Headphones
-:BEYERDYNAMIC_DT_990_Headphones rdf:type owl:NamedIndividual ,
-                                         :OpenBlackHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BROTHER_HL_L2300D_Printer
-:BROTHER_HL_L2300D_Printer rdf:type owl:NamedIndividual ,
-                                    :LaserPrinter .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#BROTHER_MFC_J1010DW_Printer
-:BROTHER_MFC_J1010DW_Printer rdf:type owl:NamedIndividual ,
-                                      :InjektPrinter .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CANON_LBP6230_Printer
-:CANON_LBP6230_Printer rdf:type owl:NamedIndividual ,
-                                :LaserPrinter .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CANON_PIXMA_MG3620_Printer
-:CANON_PIXMA_MG3620_Printer rdf:type owl:NamedIndividual ,
-                                     :InjektPrinter .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CENSPRIN_Mouse
-:CENSPRIN_Mouse rdf:type owl:NamedIndividual ,
-                         :USBMouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#CORSAIR_K100_RGB_Keyboard
-:CORSAIR_K100_RGB_Keyboard rdf:type owl:NamedIndividual ,
-                                    :MechanicalKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GODOX_EM68X_RGB_Microphone
-:GODOX_EM68X_RGB_Microphone rdf:type owl:NamedIndividual ,
-                                     :BiDirectionalMicrophone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#HP_PAVILON_Monitor
-:HP_PAVILON_Monitor rdf:type owl:NamedIndividual ,
-                             :LED .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#HP_X3000_G2_Mouse
-:HP_X3000_G2_Mouse rdf:type owl:NamedIndividual ,
-                            :WirelessMouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#HYPERX_ALLOY_CORE_Keyboard
-:HYPERX_ALLOY_CORE_Keyboard rdf:type owl:NamedIndividual ,
-                                     :MembraneKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#INPHIC_700MAH_Mouse
-:INPHIC_700MAH_Mouse rdf:type owl:NamedIndividual ,
-                              :WirelessMouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#I_ROCKS_K73M_Keyboard
-:I_ROCKS_K73M_Keyboard rdf:type owl:NamedIndividual ,
-                                :MultimediaKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#KVIDIO_BLUETOOTH_Headphones
-:KVIDIO_BLUETOOTH_Headphones rdf:type owl:NamedIndividual ,
-                                      :BluetoothHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#KYOCERA_PA2000W_Printer
-:KYOCERA_PA2000W_Printer rdf:type owl:NamedIndividual ,
-                                  :InjektPrinter .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LANGTU_W1_Keyboard
-:LANGTU_W1_Keyboard rdf:type owl:NamedIndividual ,
-                             :WirelessKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LG_48GQ900_B_Monitor
-:LG_48GQ900_B_Monitor rdf:type owl:NamedIndividual ,
-                               :OLED .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LG_ULTRAGEAR_Monitor
-:LG_ULTRAGEAR_Monitor rdf:type owl:NamedIndividual ,
-                               :OLED .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LOGITECH_B100_Mouse
-:LOGITECH_B100_Mouse rdf:type owl:NamedIndividual ,
-                              :USBMouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LOGITECH_M510_Mouse
-:LOGITECH_M510_Mouse rdf:type owl:NamedIndividual ,
-                              :WirelessMouse .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#LOVAKY_MK98_Keyboard
-:LOVAKY_MK98_Keyboard rdf:type owl:NamedIndividual ,
-                               :WirelessKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MAONO_USB_CONFERENCE_Microphone
-:MAONO_USB_CONFERENCE_Microphone rdf:type owl:NamedIndividual ,
-                                          :OmniDirectionalMicrophone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MAONO_XLR_Microphone
-:MAONO_XLR_Microphone rdf:type owl:NamedIndividual ,
-                               :CardioidMicrophone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MEMBRANE_TUFK1_Keyboard
-:MEMBRANE_TUFK1_Keyboard rdf:type owl:NamedIndividual ,
-                                  :MembraneKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#MOAFKOA_HP_Mouse
-:MOAFKOA_HP_Mouse rdf:type owl:NamedIndividual ,
-                           <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#NEXIGO_N60_Camera
-:NEXIGO_N60_Camera rdf:type owl:NamedIndividual ,
-                            :WithMicrophoneCamera .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ONEODIO_A70_Headphones
-:ONEODIO_A70_Headphones rdf:type owl:NamedIndividual ,
-                                 :OverEarHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PANASONIC_ERGOFIT_Headphones
-:PANASONIC_ERGOFIT_Headphones rdf:type owl:NamedIndividual ,
-                                       :InEarHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PANTUM_P2502W_Printer
-:PANTUM_P2502W_Printer rdf:type owl:NamedIndividual ,
-                                :LaserPrinter .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PERIXX_PERIBOARD_512_Keyboard
-:PERIXX_PERIBOARD_512_Keyboard rdf:type owl:NamedIndividual ,
-                                        :ErgonomicKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PERIXX_PERIMICE_201_Mouse
-:PERIXX_PERIMICE_201_Mouse rdf:type owl:NamedIndividual ,
-                                    <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PNY_TURBO_ATTACHE_USBFlashDrive
-:PNY_TURBO_ATTACHE_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                          :Regular .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#REDRAGON_s101_Keyboard
-:REDRAGON_s101_Keyboard rdf:type owl:NamedIndividual ,
-                                 :MultimediaKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#REOLINK_4K_Camera
-:REOLINK_4K_Camera rdf:type owl:NamedIndividual ,
-                            :IPCamera .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#RISOPHY_RGB_104_Keyboard
-:RISOPHY_RGB_104_Keyboard rdf:type owl:NamedIndividual ,
-                                   :MechanicalKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SAMSUNG_FIT_PLUS_USBFlashDrive
-:SAMSUNG_FIT_PLUS_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                         :Regular .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SAMSUNG_ODYSSEY_G70A_Monitor
-:SAMSUNG_ODYSSEY_G70A_Monitor rdf:type owl:NamedIndividual ,
-                                       :LED .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SCEPTRE_HDMI_X2_Monitor
-:SCEPTRE_HDMI_X2_Monitor rdf:type owl:NamedIndividual ,
-                                  :LED .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SENNHEISER_559_Headphones
-:SENNHEISER_559_Headphones rdf:type owl:NamedIndividual ,
-                                    :OpenBlackHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SENNHEISER_569_Headphones
-:SENNHEISER_569_Headphones rdf:type owl:NamedIndividual ,
-                                    :ClosedBackMicrophone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SONY_MDREX15AP_Headphones
-:SONY_MDREX15AP_Headphones rdf:type owl:NamedIndividual ,
-                                    :InEarHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#SOUNDCORE_ANKER_LIFE_Q30_Headphones
-:SOUNDCORE_ANKER_LIFE_Q30_Headphones rdf:type owl:NamedIndividual ,
-                                              :OverEarHeadphones .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#TEHDYCU_2.4G_Keyboard
-:TEHDYCU_2.4G_Keyboard rdf:type owl:NamedIndividual ,
-                                :FlexibleKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#THETIS_PRO_FIDO2_USBFlashDrive
-:THETIS_PRO_FIDO2_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                         :Regular .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#TS_TANSHUOKJ_USBFlashDrive
-:TS_TANSHUOKJ_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                     :Security .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#VIEWSONIC_Monitor
-:VIEWSONIC_Monitor rdf:type owl:NamedIndividual ,
-                            :OLED .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#X9_Keyboard
-:X9_Keyboard rdf:type owl:NamedIndividual ,
-                      :ErgonomicKeyboard .
+                         :WithMicrophoneCamera ;
+                :camera_has_name "AVMP 4K" ;
+                :camera_has_resolution 8 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd
@@ -1255,10 +1078,119 @@
 :Amd_29030 rdf:type owl:NamedIndividual .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/BEATS_SOLO_3_Headphones
+:BEATS_SOLO_3_Headphones rdf:type owl:NamedIndividual ,
+                                  :OnEarHeadphones ;
+                         :headphones_have_microphone "true"^^xsd:boolean ;
+                         :headphones_have_name "BEATS SOLO 3" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/BEYERDYNAMIC_DT_990_Headphones
+:BEYERDYNAMIC_DT_990_Headphones rdf:type owl:NamedIndividual ,
+                                         :OpenBlackHeadphones ;
+                                :headphones_have_microphone "true"^^xsd:boolean ;
+                                :headphones_have_name "BEZERDZNAMIC DT 990" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/BROTHER_HL_L2300D_Printer
+:BROTHER_HL_L2300D_Printer rdf:type owl:NamedIndividual ,
+                                    :LaserPrinter ;
+                           :printer_has_all_in_one "true"^^xsd:boolean ;
+                           :printer_has_name "BROTHER HL L2300D" ;
+                           :printer_has_wire "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/BROTHER_MFC_J1010DW_Printer
+:BROTHER_MFC_J1010DW_Printer rdf:type owl:NamedIndividual ,
+                                      :InjektPrinter ;
+                             :printer_has_all_in_one "false"^^xsd:boolean ,
+                                                     "true"^^xsd:boolean ;
+                             :printer_has_name "BROTHER MFC J1010DW" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CANON_LBP6230_Printer
+:CANON_LBP6230_Printer rdf:type owl:NamedIndividual ,
+                                :LaserPrinter ;
+                       :printer_has_all_in_one "false"^^xsd:boolean ;
+                       :printer_has_name "CANON LBP6230" ;
+                       :printer_has_wire "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CANON_PIXMA_MG3620_Printer
+:CANON_PIXMA_MG3620_Printer rdf:type owl:NamedIndividual ,
+                                     :InjektPrinter ;
+                            :printer_has_all_in_one "true"^^xsd:boolean ;
+                            :printer_has_name "CANON PIXMA MG3620" ;
+                            :printer_has_wire "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CENSPRIN_Mouse
+:CENSPRIN_Mouse rdf:type owl:NamedIndividual ,
+                         :USBMouse ;
+                :mouse_has_buttons 3 ;
+                :mouse_has_name "CENSPRIN" ;
+                :mouse_uses_led "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/CORSAIR_K100_RGB_Keyboard
+:CORSAIR_K100_RGB_Keyboard rdf:type owl:NamedIndividual ,
+                                    :MechanicalKeyboard ;
+                           :keyboard_has_feedback_click "true"^^xsd:boolean ;
+                           :keyboard_has_layout "QWERTY" ;
+                           :keyboard_has_name "CORSAIR K100" ;
+                           :keyboard_has_size "18.5X6.5" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GODOX_EM68X_RGB_Microphone
+:GODOX_EM68X_RGB_Microphone rdf:type owl:NamedIndividual ,
+                                     :BiDirectionalMicrophone ;
+                            :microphone_has_audio_sensitivity 115 ;
+                            :microphone_has_name "GODOX EM68X" .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Gigabyte
 :Gigabyte rdf:type owl:NamedIndividual ,
                    :Manufacturer ;
           :manufacturer_has_name "gigabyte technology" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/HP_PAVILON_Monitor
+:HP_PAVILON_Monitor rdf:type owl:NamedIndividual ,
+                             :LED ;
+                    :monitor_has_name "HP PAVILON" ;
+                    :monitor_has_resolution "1920x1080" ;
+                    :monitor_has_size 21.5 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/HP_X3000_G2_Mouse
+:HP_X3000_G2_Mouse rdf:type owl:NamedIndividual ,
+                            :WirelessMouse ;
+                   :mouse_has_buttons 3 ;
+                   :mouse_has_name "HP X3000 G2" ;
+                   :mouse_uses_led "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/HYPERX_ALLOY_CORE_Keyboard
+:HYPERX_ALLOY_CORE_Keyboard rdf:type owl:NamedIndividual ,
+                                     :MembraneKeyboard ;
+                            :keyboard_has_feedback_click "false"^^xsd:boolean ,
+                                                         "QWERTY" ;
+                            :keyboard_has_name "HYPERX ALLOY CORE" ;
+                            :keyboard_has_size "36x13.2" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/INPHIC_700MAH_Mouse
+:INPHIC_700MAH_Mouse rdf:type owl:NamedIndividual ,
+                              :WirelessMouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/I_ROCKS_K73M_Keyboard
+:I_ROCKS_K73M_Keyboard rdf:type owl:NamedIndividual ,
+                                :MechanicalKeyboard ;
+                       :keyboard_has_feedback_click "true"^^xsd:boolean ;
+                       :keyboard_has_layout "QWERTY" ;
+                       :keyboard_has_name "I ROCKS K73M" ;
+                       :keyboard_has_size "17.5x5.51" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel
@@ -1267,16 +1199,186 @@
        :manufacturer_has_name "Intel Corporation" .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/KVIDIO_BLUETOOTH_Headphones
+:KVIDIO_BLUETOOTH_Headphones rdf:type owl:NamedIndividual ,
+                                      :BluetoothHeadphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/KYOCERA_PA2000W_Printer
+:KYOCERA_PA2000W_Printer rdf:type owl:NamedIndividual ,
+                                  :InjektPrinter .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingstone
 :Kingstone rdf:type owl:NamedIndividual ,
                     :Manufacturer ;
            :manufacturer_has_name "Kingston Technology" .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LANGTU_W1_Keyboard
+:LANGTU_W1_Keyboard rdf:type owl:NamedIndividual ,
+                             :WirelessKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LG_48GQ900_B_Monitor
+:LG_48GQ900_B_Monitor rdf:type owl:NamedIndividual ,
+                               :OLED .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LG_ULTRAGEAR_Monitor
+:LG_ULTRAGEAR_Monitor rdf:type owl:NamedIndividual ,
+                               :OLED .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LOGITECH_B100_Mouse
+:LOGITECH_B100_Mouse rdf:type owl:NamedIndividual ,
+                              :USBMouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LOGITECH_M510_Mouse
+:LOGITECH_M510_Mouse rdf:type owl:NamedIndividual ,
+                              :WirelessMouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LOVAKY_MK98_Keyboard
+:LOVAKY_MK98_Keyboard rdf:type owl:NamedIndividual ,
+                               :WirelessKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MAONO_USB_CONFERENCE_Microphone
+:MAONO_USB_CONFERENCE_Microphone rdf:type owl:NamedIndividual ,
+                                          :OmniDirectionalMicrophone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MAONO_XLR_Microphone
+:MAONO_XLR_Microphone rdf:type owl:NamedIndividual ,
+                               :CardioidMicrophone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MEMBRANE_TUFK1_Keyboard
+:MEMBRANE_TUFK1_Keyboard rdf:type owl:NamedIndividual ,
+                                  :MembraneKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MOAFKOA_HP_Mouse
+:MOAFKOA_HP_Mouse rdf:type owl:NamedIndividual ,
+                           <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/NEXIGO_N60_Camera
+:NEXIGO_N60_Camera rdf:type owl:NamedIndividual ,
+                            :WithMicrophoneCamera .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Nvidia
 :Nvidia rdf:type owl:NamedIndividual ,
                  :Manufacturer ;
         :manufacturer_has_name "NVIDIA Corporation" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ONEODIO_A70_Headphones
+:ONEODIO_A70_Headphones rdf:type owl:NamedIndividual ,
+                                 :OverEarHeadphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PANASONIC_ERGOFIT_Headphones
+:PANASONIC_ERGOFIT_Headphones rdf:type owl:NamedIndividual ,
+                                       :InEarHeadphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PANTUM_P2502W_Printer
+:PANTUM_P2502W_Printer rdf:type owl:NamedIndividual ,
+                                :LaserPrinter .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PERIXX_PERIBOARD_512_Keyboard
+:PERIXX_PERIBOARD_512_Keyboard rdf:type owl:NamedIndividual ,
+                                        :ErgonomicKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PERIXX_PERIMICE_201_Mouse
+:PERIXX_PERIMICE_201_Mouse rdf:type owl:NamedIndividual ,
+                                    <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PNY_TURBO_ATTACHE_USBFlashDrive
+:PNY_TURBO_ATTACHE_USBFlashDrive rdf:type owl:NamedIndividual ,
+                                          :Regular .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/REDRAGON_s101_Keyboard
+:REDRAGON_s101_Keyboard rdf:type owl:NamedIndividual ,
+                                 :MultimediaKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/REOLINK_4K_Camera
+:REOLINK_4K_Camera rdf:type owl:NamedIndividual ,
+                            :IPCamera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/RISOPHY_RGB_104_Keyboard
+:RISOPHY_RGB_104_Keyboard rdf:type owl:NamedIndividual ,
+                                   :MechanicalKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SAMSUNG_FIT_PLUS_USBFlashDrive
+:SAMSUNG_FIT_PLUS_USBFlashDrive rdf:type owl:NamedIndividual ,
+                                         :Regular .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SAMSUNG_ODYSSEY_G70A_Monitor
+:SAMSUNG_ODYSSEY_G70A_Monitor rdf:type owl:NamedIndividual ,
+                                       :LED .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SCEPTRE_HDMI_X2_Monitor
+:SCEPTRE_HDMI_X2_Monitor rdf:type owl:NamedIndividual ,
+                                  :LED .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SENNHEISER_559_Headphones
+:SENNHEISER_559_Headphones rdf:type owl:NamedIndividual ,
+                                    :OpenBlackHeadphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SENNHEISER_569_Headphones
+:SENNHEISER_569_Headphones rdf:type owl:NamedIndividual ,
+                                    :ClosedBackMicrophone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SONY_MDREX15AP_Headphones
+:SONY_MDREX15AP_Headphones rdf:type owl:NamedIndividual ,
+                                    :InEarHeadphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SOUNDCORE_ANKER_LIFE_Q30_Headphones
+:SOUNDCORE_ANKER_LIFE_Q30_Headphones rdf:type owl:NamedIndividual ,
+                                              :OverEarHeadphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/TEHDYCU_2.4G_Keyboard
+:TEHDYCU_2.4G_Keyboard rdf:type owl:NamedIndividual ,
+                                :FlexibleKeyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/THETIS_PRO_FIDO2_USBFlashDrive
+:THETIS_PRO_FIDO2_USBFlashDrive rdf:type owl:NamedIndividual ,
+                                         :Regular .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/TS_TANSHUOKJ_USBFlashDrive
+:TS_TANSHUOKJ_USBFlashDrive rdf:type owl:NamedIndividual ,
+                                     :Security .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/VIEWSONIC_Monitor
+:VIEWSONIC_Monitor rdf:type owl:NamedIndividual ,
+                            :OLED .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/X9_Keyboard
+:X9_Keyboard rdf:type owl:NamedIndividual ,
+                      :ErgonomicKeyboard .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

@@ -999,6 +999,15 @@
 #    Individuals
 #################################################################
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ROCCAT_MAGMA_Keyboard
+:ROCCAT_MAGMA_Keyboard rdf:type owl:NamedIndividual ,
+                                :MembraneKeyboard ;
+                       :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                       :keyboard_has_layout "QWERTY" ;
+                       :keyboard_has_name "ROCCAT MAGMA" ;
+                       :keyboard_has_size "15.7x7.8" .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ADESSO_SLIMTOUCH_232_Keyboard
 :ADESSO_SLIMTOUCH_232_Keyboard rdf:type owl:NamedIndividual ,
                                         :FlexibleKeyboard ;
@@ -1181,7 +1190,10 @@
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/INPHIC_700MAH_Mouse
 :INPHIC_700MAH_Mouse rdf:type owl:NamedIndividual ,
-                              :WirelessMouse .
+                              :WirelessMouse ;
+                     :mouse_has_buttons 6 ;
+                     :mouse_has_name "INPHIC 700MAH" ;
+                     :mouse_uses_led "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/I_ROCKS_K73M_Keyboard
@@ -1201,12 +1213,17 @@
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/KVIDIO_BLUETOOTH_Headphones
 :KVIDIO_BLUETOOTH_Headphones rdf:type owl:NamedIndividual ,
-                                      :BluetoothHeadphones .
+                                      :BluetoothHeadphones ;
+                             :headphones_have_microphone "true"^^xsd:boolean ;
+                             :headphones_have_name "KVIDIO WH201A" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/KYOCERA_PA2000W_Printer
 :KYOCERA_PA2000W_Printer rdf:type owl:NamedIndividual ,
-                                  :InjektPrinter .
+                                  :LaserPrinter ;
+                         :printer_has_all_in_one "false"^^xsd:boolean ;
+                         :printer_has_name "KYOCERA PA2000W" ;
+                         :printer_has_wire "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingstone
@@ -1217,57 +1234,81 @@
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LANGTU_W1_Keyboard
 :LANGTU_W1_Keyboard rdf:type owl:NamedIndividual ,
-                             :WirelessKeyboard .
+                             :WirelessKeyboard ;
+                    :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                    :keyboard_has_layout "QWERTY" ;
+                    :keyboard_has_name "LANGTU W1" ;
+                    :keyboard_has_size "17.7x6.38" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LG_48GQ900_B_Monitor
 :LG_48GQ900_B_Monitor rdf:type owl:NamedIndividual ,
-                               :OLED .
+                               :OLED ;
+                      :monitor_has_name "LG 48GQ900 B" ;
+                      :monitor_has_size 48 ,
+                                        "3849x2160" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LG_ULTRAGEAR_Monitor
 :LG_ULTRAGEAR_Monitor rdf:type owl:NamedIndividual ,
-                               :OLED .
+                               :OLED ;
+                      :monitor_has_name "LG ULTRAGEAR OLED" ;
+                      :monitor_has_resolution "2560x1440" ;
+                      :monitor_has_size 27 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LOGITECH_B100_Mouse
 :LOGITECH_B100_Mouse rdf:type owl:NamedIndividual ,
-                              :USBMouse .
+                              :USBMouse ;
+                     :mouse_has_buttons 3 ;
+                     :mouse_has_name "LOGITECH B100" ;
+                     :mouse_uses_led "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LOGITECH_M510_Mouse
 :LOGITECH_M510_Mouse rdf:type owl:NamedIndividual ,
-                              :WirelessMouse .
+                              :WirelessMouse ;
+                     :mouse_has_buttons 7 ;
+                     :mouse_has_name "LOGITECH M510" ;
+                     :mouse_uses_led "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LOVAKY_MK98_Keyboard
 :LOVAKY_MK98_Keyboard rdf:type owl:NamedIndividual ,
-                               :WirelessKeyboard .
+                               :WirelessKeyboard ;
+                      :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                      :keyboard_has_layout "QWERTY" ;
+                      :keyboard_has_name "LOVAKY MK98" ;
+                      :keyboard_has_size "17.6x6.02" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MAONO_USB_CONFERENCE_Microphone
 :MAONO_USB_CONFERENCE_Microphone rdf:type owl:NamedIndividual ,
-                                          :OmniDirectionalMicrophone .
+                                          :OmniDirectionalMicrophone ;
+                                 :microphone_has_audio_sensitivity 110 ;
+                                 :microphone_has_name "MAONO USB CONFERENCE" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MAONO_XLR_Microphone
 :MAONO_XLR_Microphone rdf:type owl:NamedIndividual ,
-                               :CardioidMicrophone .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MEMBRANE_TUFK1_Keyboard
-:MEMBRANE_TUFK1_Keyboard rdf:type owl:NamedIndividual ,
-                                  :MembraneKeyboard .
+                               :CardioidMicrophone ;
+                      :microphone_has_audio_sensitivity 82 ;
+                      :microphone_has_name "MAONO XLR" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/MOAFKOA_HP_Mouse
 :MOAFKOA_HP_Mouse rdf:type owl:NamedIndividual ,
-                           <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> .
+                           <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> ;
+                  :mouse_has_buttons 2 ;
+                  :mouse_has_name "MOAFKOA HP 537748 001" ;
+                  :mouse_uses_led "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/NEXIGO_N60_Camera
 :NEXIGO_N60_Camera rdf:type owl:NamedIndividual ,
-                            :WithMicrophoneCamera .
+                            :WithMicrophoneCamera ;
+                   :camera_has_name "NEXIGO N60" ;
+                   :camera_has_resolution 4 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Nvidia
@@ -1278,107 +1319,150 @@
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ONEODIO_A70_Headphones
 :ONEODIO_A70_Headphones rdf:type owl:NamedIndividual ,
-                                 :OverEarHeadphones .
+                                 :OverEarHeadphones ;
+                        :headphones_have_microphone "true"^^xsd:boolean ;
+                        :headphones_have_name "ONE ODIO A70" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PANASONIC_ERGOFIT_Headphones
 :PANASONIC_ERGOFIT_Headphones rdf:type owl:NamedIndividual ,
-                                       :InEarHeadphones .
+                                       :InEarHeadphones ;
+                              :headphones_have_microphone "true"^^xsd:boolean ;
+                              :headphones_have_name "PANASONIC ERGOFIT" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PANTUM_P2502W_Printer
 :PANTUM_P2502W_Printer rdf:type owl:NamedIndividual ,
-                                :LaserPrinter .
+                                :LaserPrinter ;
+                       :printer_has_all_in_one "false"^^xsd:boolean ;
+                       :printer_has_name "PANTUM P2502W" ;
+                       :printer_has_wire "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PERIXX_PERIBOARD_512_Keyboard
 :PERIXX_PERIBOARD_512_Keyboard rdf:type owl:NamedIndividual ,
-                                        :ErgonomicKeyboard .
+                                        :ErgonomicKeyboard ;
+                               :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                               :keyboard_has_layout "QWERTY" ;
+                               :keyboard_has_name "PERIXX PERIBOARD 512" ;
+                               :keyboard_has_size "19.0x9.3" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PERIXX_PERIMICE_201_Mouse
 :PERIXX_PERIMICE_201_Mouse rdf:type owl:NamedIndividual ,
-                                    <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> .
+                                    <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> ;
+                           :mouse_has_buttons 3 ;
+                           :mouse_has_name "PERIXX PERIMICE 201" ;
+                           :mouse_uses_led "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/PNY_TURBO_ATTACHE_USBFlashDrive
 :PNY_TURBO_ATTACHE_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                          :Regular .
+                                          :Regular ;
+                                 :usbflashdrive_has_name 128 ,
+                                                         "PNY TURBO ATTACHE" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/REDRAGON_s101_Keyboard
 :REDRAGON_s101_Keyboard rdf:type owl:NamedIndividual ,
-                                 :MultimediaKeyboard .
+                                 :MultimediaKeyboard ;
+                        :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                        :keyboard_has_layout "QWERTY" ;
+                        :keyboard_has_name "REDRAGON S101" ;
+                        :keyboard_has_size "17.9x7.2" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/REOLINK_4K_Camera
 :REOLINK_4K_Camera rdf:type owl:NamedIndividual ,
-                            :IPCamera .
+                            :IPCamera ;
+                   :camera_has_name "REOLINK 4K" ;
+                   :camera_has_resolution 5 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/RISOPHY_RGB_104_Keyboard
 :RISOPHY_RGB_104_Keyboard rdf:type owl:NamedIndividual ,
-                                   :MechanicalKeyboard .
+                                   :MechanicalKeyboard ;
+                          :keyboard_has_feedback_click "true"^^xsd:boolean ;
+                          :keyboard_has_layout "QWERTY" ;
+                          :keyboard_has_name "RISOPHY 104" ;
+                          :keyboard_has_size "16.9x4.7" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SAMSUNG_FIT_PLUS_USBFlashDrive
 :SAMSUNG_FIT_PLUS_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                         :Regular .
+                                         :Regular ;
+                                :usbflashdrive_has_memory 128 ;
+                                :usbflashdrive_has_name "SAMSUNG FIT PLUS" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SAMSUNG_ODYSSEY_G70A_Monitor
 :SAMSUNG_ODYSSEY_G70A_Monitor rdf:type owl:NamedIndividual ,
-                                       :LED .
+                                       :LED ;
+                              :monitor_has_name "SAMSUNG ODYSSEY G70A" ;
+                              :monitor_has_resolution "3840x2160" ;
+                              :monitor_has_size 28 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SCEPTRE_HDMI_X2_Monitor
 :SCEPTRE_HDMI_X2_Monitor rdf:type owl:NamedIndividual ,
-                                  :LED .
+                                  :LED ;
+                         :monitor_has_name "SCEPTRE HDMI X2" ;
+                         :monitor_has_resolution "1920x1080" ;
+                         :monitor_has_size 27 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SENNHEISER_559_Headphones
 :SENNHEISER_559_Headphones rdf:type owl:NamedIndividual ,
-                                    :OpenBlackHeadphones .
+                                    :OpenBlackHeadphones ;
+                           :headphones_have_microphone "true"^^xsd:boolean ;
+                           :headphones_have_name "SENNHEISER 559" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SENNHEISER_569_Headphones
 :SENNHEISER_569_Headphones rdf:type owl:NamedIndividual ,
-                                    :ClosedBackMicrophone .
+                                    :ClosedBackMicrophone ;
+                           :headphones_have_microphone "true"^^xsd:boolean ;
+                           :headphones_have_name "SENNHEISER 569" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SONY_MDREX15AP_Headphones
 :SONY_MDREX15AP_Headphones rdf:type owl:NamedIndividual ,
-                                    :InEarHeadphones .
+                                    :InEarHeadphones ;
+                           :headphones_have_microphone "true"^^xsd:boolean ;
+                           :headphones_have_name "SONY MDREX15AP" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SOUNDCORE_ANKER_LIFE_Q30_Headphones
 :SOUNDCORE_ANKER_LIFE_Q30_Headphones rdf:type owl:NamedIndividual ,
-                                              :OverEarHeadphones .
+                                              :OverEarHeadphones ;
+                                     :headphones_have_microphone "true"^^xsd:boolean ;
+                                     :headphones_have_name "SOUNDCORE ANKER LIFE Q30" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/TEHDYCU_2.4G_Keyboard
 :TEHDYCU_2.4G_Keyboard rdf:type owl:NamedIndividual ,
-                                :FlexibleKeyboard .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/THETIS_PRO_FIDO2_USBFlashDrive
-:THETIS_PRO_FIDO2_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                         :Regular .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/TS_TANSHUOKJ_USBFlashDrive
-:TS_TANSHUOKJ_USBFlashDrive rdf:type owl:NamedIndividual ,
-                                     :Security .
+                                :FlexibleKeyboard ;
+                       :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                       :keyboard_has_layout "QWERTY" ;
+                       :keyboard_has_name "TEHDYCU 2.4G" ;
+                       :keyboard_has_size "15.9x4.7" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/VIEWSONIC_Monitor
 :VIEWSONIC_Monitor rdf:type owl:NamedIndividual ,
-                            :OLED .
+                            :OLED ;
+                   :monitor_has_name "VIEWSONIC" ;
+                   :monitor_has_resolution "1920x1080" ;
+                   :monitor_has_size 15.6 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/X9_Keyboard
 :X9_Keyboard rdf:type owl:NamedIndividual ,
-                      :ErgonomicKeyboard .
+                      :ErgonomicKeyboard ;
+             :keyboard_has_feedback_click "false"^^xsd:boolean ;
+             :keyboard_has_layout "QWERTY" ;
+             :keyboard_has_name "X9 PERFORMANCE" ;
+             :keyboard_has_size "16.8x4.9" .
 
 
 ###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi

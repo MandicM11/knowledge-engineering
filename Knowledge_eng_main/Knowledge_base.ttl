@@ -12,6 +12,144 @@
 #    Object Properties
 #################################################################
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#IDE_is_compatible_with_OS
+:IDE_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :is_compatible_with_OS ;
+                           rdfs:domain :IDE ;
+                           rdfs:range :Operating_System .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#antivirus_is_compatible_with_OS
+:antivirus_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf :is_compatible_with_OS ;
+                                 rdfs:domain :Antivirus ;
+                                 rdfs:range :Operating_System .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for
+:driver_for rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Driver ;
+            rdfs:range :Hardware .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_GPU
+:driver_for_GPU rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :driver_for ;
+                rdfs:domain :Driver ;
+                rdfs:range :GPU .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_camera
+:driver_for_camera rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :driver_for ;
+                   rdfs:domain :Driver ;
+                   rdfs:range :Camera .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_keadphones
+:driver_for_keadphones rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :driver_for ;
+                       rdfs:domain :Driver ;
+                       rdfs:range :Headphones .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_keyboard
+:driver_for_keyboard rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :driver_for ;
+                     rdfs:domain :Driver ;
+                     rdfs:range :Keyboard .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_microphone
+:driver_for_microphone rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :driver_for ;
+                       rdfs:domain :Driver ;
+                       rdfs:range :Microphone .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_monitor
+:driver_for_monitor rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :driver_for ;
+                    rdfs:domain :Driver ;
+                    rdfs:range :Monitor .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_mouse
+:driver_for_mouse rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :driver_for ;
+                  rdfs:domain :Driver ;
+                  rdfs:range :Mouse .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_network_card
+:driver_for_network_card rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :driver_for ;
+                         rdfs:domain :Driver ;
+                         rdfs:range :Network_card .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_printer
+:driver_for_printer rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :driver_for ;
+                    rdfs:domain :Driver ;
+                    rdfs:range :Printer .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_for_sound_card
+:driver_for_sound_card rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :driver_for ;
+                       rdfs:domain :Driver ;
+                       rdfs:range :Sound_card .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_is_compatible_with_OS
+:driver_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :is_compatible_with_OS ;
+                              rdfs:domain :Driver ;
+                              rdfs:range :Operating_System .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#internet_browser_is_compatible_with_OS
+:internet_browser_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf :is_compatible_with_OS ;
+                                        rdfs:domain :Internet_Browser ;
+                                        rdfs:range :Operating_System .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#is_compatible_with_OS
+:is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#multimedia_is_compatible_with_OS
+:multimedia_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :is_compatible_with_OS ;
+                                  rdfs:domain :Multimedia ;
+                                  rdfs:range :Operating_System .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#productivity_is_compatible_with_OS
+:productivity_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                                    rdfs:subPropertyOf :is_compatible_with_OS ;
+                                    rdfs:domain :Productivity ;
+                                    rdfs:range :Operating_System .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#software_has_manufacturer
+:software_has_manufacturer rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty ;
+                           rdfs:domain :Software ;
+                           rdfs:range :Manufacturer .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#video_game_is_compatible_with_OS
+:video_game_is_compatible_with_OS rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :is_compatible_with_OS ;
+                                  rdfs:domain :Video_Game ;
+                                  rdfs:range :Operating_System .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/attaches_to
 :attaches_to rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
@@ -302,6 +440,118 @@
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#IDE_has_name
+:IDE_has_name rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :IDE ;
+              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#IDE_has_version
+:IDE_has_version rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :IDE ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OS_has_name
+:OS_has_name rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Operating_System ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#OS_has_version
+:OS_has_version rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Operating_System ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#antivirus_has_name
+:antivirus_has_name rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :Antivirus ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#antivirus_has_version
+:antivirus_has_version rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :Antivirus ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_has_name
+:driver_has_name rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Driver ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#driver_has_version
+:driver_has_version rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdfs:domain :Driver ;
+                    rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#internet_browser_has_name
+:internet_browser_has_name rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf owl:topDataProperty ;
+                           rdfs:domain :Internet_Browser ;
+                           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#internet_browser_has_version
+:internet_browser_has_version rdf:type owl:DatatypeProperty ;
+                              rdfs:subPropertyOf owl:topDataProperty ;
+                              rdfs:domain :Internet_Browser ;
+                              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#multimedia_has_name
+:multimedia_has_name rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Multimedia ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#multimedia_has_version
+:multimedia_has_version rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :Multimedia ;
+                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#productivity_has_name
+:productivity_has_name rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :Productivity ;
+                       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#productivity_has_version
+:productivity_has_version rdf:type owl:DatatypeProperty ;
+                          rdfs:subPropertyOf owl:topDataProperty ;
+                          rdfs:domain :Productivity ;
+                          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#video_game_has_name
+:video_game_has_name rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :Video_Game ;
+                     rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#video_game_has_version
+:video_game_has_version rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :Video_Game ;
+                        rdfs:range xsd:string .
+
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/camera_has_name
 :camera_has_name rdf:type owl:DatatypeProperty ;
@@ -665,6 +915,46 @@
 #    Classes
 #################################################################
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Antivirus
+:Antivirus rdf:type owl:Class ;
+           rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Driver
+:Driver rdf:type owl:Class ;
+        rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#IDE
+:IDE rdf:type owl:Class ;
+     rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Internet_Browser
+:Internet_Browser rdf:type owl:Class ;
+                  rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Multimedia
+:Multimedia rdf:type owl:Class ;
+            rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Operating_System
+:Operating_System rdf:type owl:Class ;
+                  rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Productivity
+:Productivity rdf:type owl:Class ;
+              rdfs:subClassOf :Software .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Video_Game
+:Video_Game rdf:type owl:Class ;
+            rdfs:subClassOf :Software .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse
 <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#PS/2Mouse> rdf:type owl:Class ;
                                                                                 rdfs:subClassOf :Mouse .
@@ -960,6 +1250,10 @@
         rdfs:subClassOf :Internal .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Software
+:Software rdf:type owl:Class .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Sound_card
 :Sound_card rdf:type owl:Class ;
             rdfs:subClassOf :Internal .
@@ -999,13 +1293,28 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#ROCCAT_MAGMA_Keyboard
-:ROCCAT_MAGMA_Keyboard rdf:type owl:NamedIndividual ,
-                                :MembraneKeyboard ;
-                       :keyboard_has_feedback_click "false"^^xsd:boolean ;
-                       :keyboard_has_layout "QWERTY" ;
-                       :keyboard_has_name "ROCCAT MAGMA" ;
-                       :keyboard_has_size "15.7x7.8" .
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Apple
+:Apple rdf:type owl:NamedIndividual ,
+                :Manufacturer ;
+       :manufacturer_has_name "Apple Inc." .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Google
+:Google rdf:type owl:NamedIndividual ,
+                 :Manufacturer ;
+        :manufacturer_has_name "Google LLC" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Linux
+:Linux rdf:type owl:NamedIndividual ,
+                :Manufacturer ;
+       :manufacturer_has_name "Linux" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Microsoft
+:Microsoft rdf:type owl:NamedIndividual ,
+                    :Manufacturer ;
+           :manufacturer_has_name "Microsoft Corporation" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ADESSO_SLIMTOUCH_232_Keyboard
@@ -1386,6 +1695,15 @@
                           :keyboard_has_layout "QWERTY" ;
                           :keyboard_has_name "RISOPHY 104" ;
                           :keyboard_has_size "16.9x4.7" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/ROCCAT_MAGMA_Keyboard
+:ROCCAT_MAGMA_Keyboard rdf:type owl:NamedIndividual ,
+                                :MembraneKeyboard ;
+                       :keyboard_has_feedback_click "false"^^xsd:boolean ;
+                       :keyboard_has_layout "QWERTY" ;
+                       :keyboard_has_name "ROCCAT MAGMA" ;
+                       :keyboard_has_size "15.7x7.8" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/SAMSUNG_FIT_PLUS_USBFlashDrive

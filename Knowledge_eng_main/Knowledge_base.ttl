@@ -12,11 +12,6 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#hardware_has_manufacturer
-:hardware_has_manufacturer rdf:type owl:ObjectProperty ;
-                           rdfs:subPropertyOf owl:topObjectProperty .
-
-
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/IDE_is_compatible_with_OS
 :IDE_is_compatible_with_OS rdf:type owl:ObjectProperty ;
                            rdfs:subPropertyOf :is_compatible_with_OS ;
@@ -325,6 +320,11 @@
                        rdfs:range :Motherboard .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/hardware_has_manufacturer
+:hardware_has_manufacturer rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf owl:topObjectProperty .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/has_cache
 :has_cache rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty .
@@ -447,20 +447,6 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cache_has_level
-:cache_has_level rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf owl:topDataProperty ;
-                 rdfs:domain :Cache ;
-                 rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#cache_has_size_in_mb
-:cache_has_size_in_mb rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf owl:topDataProperty ;
-                      rdfs:domain :Cache ;
-                      rdfs:range xsd:int .
-
-
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/IDE_has_name
 :IDE_has_name rdf:type owl:DatatypeProperty ;
               rdfs:subPropertyOf owl:topDataProperty ;
@@ -501,6 +487,20 @@
                        rdfs:subPropertyOf owl:topDataProperty ;
                        rdfs:domain :Antivirus ;
                        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cache_has_level
+:cache_has_level rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Cache ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/cache_has_size_in_mb
+:cache_has_size_in_mb rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf owl:topDataProperty ;
+                      rdfs:domain :Cache ;
+                      rdfs:range xsd:int .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/camera_has_name
@@ -752,8 +752,7 @@
 :monitor_has_size rdf:type owl:DatatypeProperty ;
                   rdfs:subPropertyOf owl:topDataProperty ;
                   rdfs:domain :Monitor ;
-                  rdfs:range xsd:int ,
-                             xsd:string .
+                  rdfs:range xsd:int .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/mouse_has_buttons
@@ -1324,380 +1323,6 @@
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMD_Ryzen_5_5600
-:AMD_Ryzen_5_5600 rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMD_Ryzen_5_5600G
-:AMD_Ryzen_5_5600G rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMD_Ryzen_5_5600X
-:AMD_Ryzen_5_5600X rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMD_Ryzen_7_5700X
-:AMD_Ryzen_7_5700X rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMD_Ryzen_7_5800X3D
-:AMD_Ryzen_7_5800X3D rdf:type owl:NamedIndividual ;
-                     :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#AMD_Ryzen_Threadripper_PRO_5995WX
-:AMD_Ryzen_Threadripper_PRO_5995WX rdf:type owl:NamedIndividual ;
-                                   :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen3_2200g
-:Amd_Ryzen3_2200g rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen3_2200ge
-:Amd_Ryzen3_2200ge rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen5_7600
-:Amd_Ryzen5_7600 rdf:type owl:NamedIndividual ;
-                 :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen5_7600x
-:Amd_Ryzen5_7600x rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen7_7700
-:Amd_Ryzen7_7700 rdf:type owl:NamedIndividual ;
-                 :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen7_7700x
-:Amd_Ryzen7_7700x rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen7_7800x3d
-:Amd_Ryzen7_7800x3d rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen9_7900
-:Amd_Ryzen9_7900 rdf:type owl:NamedIndividual ;
-                 :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen9_7900x
-:Amd_Ryzen9_7900x rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Amd_Ryzen9_7900x3d
-:Amd_Ryzen9_7900x3d rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Amd .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GIGABYTE_Z790_AORUS_ELITE_AX_ATX_LGA1700
-:GIGABYTE_Z790_AORUS_ELITE_AX_ATX_LGA1700 rdf:type owl:NamedIndividual ;
-                                          :hardware_has_manufacturer :Gigabyte .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GeForce_RTX_3060
-:GeForce_RTX_3060 rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Nvidia ;
-                  :gpu_has_memory 15000 ;
-                  :gpu_has_name "GeForce_RTX_3060" ;
-                  :gpu_has_speed "1320mhz" ;
-                  :gpu_has_video_memory 12288 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GeForce_RTX_3070_Ti
-:GeForce_RTX_3070_Ti rdf:type owl:NamedIndividual ;
-                     :hardware_has_manufacturer :Nvidia ;
-                     :gpu_has_memory 1800 ;
-                     :gpu_has_name "GeForce_RTX_3070_Ti" ;
-                     :gpu_has_speed "1575mhz" ;
-                     :gpu_has_video_memory 8129 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GeForce_RTX_3080_12GB
-:GeForce_RTX_3080_12GB rdf:type owl:NamedIndividual ;
-                       :hardware_has_manufacturer :Nvidia ;
-                       :gpu_has_name "GeForce_RTX_3080_12GB" .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GeForce_RTX_4080
-:GeForce_RTX_4080 rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Nvidia ;
-                  :gpu_has_name "GeForce_RTX_4080" .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#GeForce_RTX_4090
-:GeForce_RTX_4090 rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Nvidia ;
-                  :gpu_has_name "GeForce_RTX_4090" .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Gigabyte_UD850GM
-:Gigabyte_UD850GM rdf:type owl:NamedIndividual ;
-                  :hardware_has_manufacturer :Gigabyte .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Celeron_G6900
-:Intel_Celeron_G6900 rdf:type owl:NamedIndividual ;
-                     :hardware_has_manufacturer :Intel ;
-                     :cpu_attaches_to :GIGABYTE_Z790_AORUS_ELITE_AX_ATX_LGA1700 ;
-                     :cpu_has_cores 2 ;
-                     :cpu_has_name "Intel_Celeron_G6900" ;
-                     :cpu_has_speed 3.4 ;
-                     :cpu_has_threads 2 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-10100
-:Intel_Core_i3-10100 rdf:type owl:NamedIndividual ;
-                     :hardware_has_manufacturer :Intel ;
-                     :has_cache :L3_16mb ;
-                     :cpu_has_cores 4 ;
-                     :cpu_has_name "Intel_Core_i3-10100" ;
-                     :cpu_has_speed 4.3 ;
-                     :cpu_has_threads 8 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-2100
-:Intel_Core_i3-2100 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel ;
-                    :has_cache :L1_3 ;
-                    :cpu_has_cores 2 ;
-                    :cpu_has_speed 3.1 ;
-                    :cpu_has_threads 4 ;
-                    :driver_has_name "Intel_Core_i3-2100" .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-3220
-:Intel_Core_i3-3220 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel ;
-                    :has_cache :L1_3 ;
-                    :cpu_has_cores 2 ;
-                    :cpu_has_name "Intel_Core_i3-3220" ;
-                    :cpu_has_speed 3.3 ;
-                    :cpu_has_threads 4 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-3240
-:Intel_Core_i3-3240 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel ;
-                    :has_cache :L1_3 ;
-                    :cpu_has_cores 2 ;
-                    :cpu_has_name "Intel_Core_i3-3240" ;
-                    :cpu_has_speed 3.3 ;
-                    :cpu_has_threads 4 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-4130
-:Intel_Core_i3-4130 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel ;
-                    :has_cache :L1_3 ;
-                    :cpu_has_cores 2 ;
-                    :cpu_has_speed 3.4 ;
-                    :cpu_has_threads 4 ;
-                    :driver_has_name "Intel_Core_i3-4130" .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-6100
-:Intel_Core_i3-6100 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-7100
-:Intel_Core_i3-7100 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i3-9100F
-:Intel_Core_i3-9100F rdf:type owl:NamedIndividual ;
-                     :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-650
-:Intel_Core_i5-650 rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-655
-:Intel_Core_i5-655 rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-665k
-:Intel_Core_i5-665k rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-7400
-:Intel_Core_i5-7400 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-750
-:Intel_Core_i5-750 rdf:type owl:NamedIndividual ;
-                   :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-7500
-:Intel_Core_i5-7500 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-8400
-:Intel_Core_i5-8400 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i5-8500
-:Intel_Core_i5-8500 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i7-8500
-:Intel_Core_i7-8500 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i7-8600
-:Intel_Core_i7-8600 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i7-8750
-:Intel_Core_i7-8750 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel ;
-                    :has_cache :L2_9.5mb ;
-                    :cpu_has_cores 6 ;
-                    :cpu_has_name "Intel_Core_i7-8750" ;
-                    :cpu_has_speed 4.1 ;
-                    :cpu_has_threads 12 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_Core_i7-8750h
-:Intel_Core_i7-8750h rdf:type owl:NamedIndividual ;
-                     :hardware_has_manufacturer :Intel ;
-                     :has_cache :L2_9.5mb ;
-                     :cpu_has_cores 6 ;
-                     :cpu_has_name "Intel_Core_i7-8750h" ;
-                     :cpu_has_speed 4.1 ;
-                     :cpu_has_threads 12 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Intel_i3_10100_motherboard
-:Intel_i3_10100_motherboard rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#KINGSTON_DDR3_1333Mhz_Desktop_PC_DDR3_8_GB
-:KINGSTON_DDR3_1333Mhz_Desktop_PC_DDR3_8_GB rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Kingston_FURY_Beast_32_GB
-:Kingston_FURY_Beast_32_GB rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Kingston_HyperX_Fury_16_GB
-:Kingston_HyperX_Fury_16_GB rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#Kingston_HyperX_Fury_DDR4_8GB_3200MHZ
-:Kingston_HyperX_Fury_DDR4_8GB_3200MHZ rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L1_1
-:L1_1 rdf:type owl:NamedIndividual ;
-      :cache_has_level 1 ;
-      :cache_has_size_in_mb 2 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L1_2
-:L1_2 rdf:type owl:NamedIndividual ;
-      :cache_has_level 2 ;
-      :cache_has_size_in_mb 4 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L1_3
-:L1_3 rdf:type owl:NamedIndividual ;
-      :cache_has_level 1 ;
-      :cache_has_size_in_mb 8 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L2_1
-:L2_1 rdf:type owl:NamedIndividual ;
-      :cache_has_level 2 ;
-      :cache_has_size_in_mb 8 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L2_3
-:L2_3 rdf:type owl:NamedIndividual ;
-      :cache_has_level 2 ;
-      :cache_has_size_in_mb 32 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L2_3mb
-:L2_3mb rdf:type owl:NamedIndividual ;
-        :cache_has_level 2 ;
-        :cache_has_size_in_mb 3 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L2_4mb
-:L2_4mb rdf:type owl:NamedIndividual ;
-        :cache_has_level 2 ,
-                         4 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L2_5mb
-:L2_5mb rdf:type owl:NamedIndividual ;
-        :cache_has_level 2 ;
-        :cache_has_size_in_mb 5 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L2_9.5mb
-:L2_9.5mb rdf:type owl:NamedIndividual ;
-          :cache_has_level 2 ;
-          :cache_has_size_in_mb 9.5 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L3_1
-:L3_1 rdf:type owl:NamedIndividual ;
-      :cache_has_level 3 ;
-      :cache_has_size_in_mb 32 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L3_12mb
-:L3_12mb rdf:type owl:NamedIndividual ;
-         :cache_has_level 3 ;
-         :cache_has_size_in_mb 12 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L3_16mb
-:L3_16mb rdf:type owl:NamedIndividual ;
-         :cache_has_level 3 ;
-         :cache_has_size_in_mb 16 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#L3_20mb
-:L3_20mb rdf:type owl:NamedIndividual ;
-         :cache_has_size_in_mb 20 ,
-                               3 .
-
-
-###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#intel_core_i3-8100
-:intel_core_i3-8100 rdf:type owl:NamedIndividual ;
-                    :hardware_has_manufacturer :Intel .
-
-
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#100GbE_Intel®_Ethernet_Network_Adapter_E810
 <http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4#100GbE_Intel®_Ethernet_Network_Adapter_E810> rdf:type owl:NamedIndividual ;
                                                                                                                   :network_card_has_interface "Intel" ;
@@ -1750,6 +1375,36 @@
                         :camera_has_resolution 5 .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMD_Ryzen_5_5600
+:AMD_Ryzen_5_5600 rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMD_Ryzen_5_5600G
+:AMD_Ryzen_5_5600G rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMD_Ryzen_5_5600X
+:AMD_Ryzen_5_5600X rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMD_Ryzen_7_5700X
+:AMD_Ryzen_7_5700X rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMD_Ryzen_7_5800X3D
+:AMD_Ryzen_7_5800X3D rdf:type owl:NamedIndividual ;
+                     :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/AMD_Ryzen_Threadripper_PRO_5995WX
+:AMD_Ryzen_Threadripper_PRO_5995WX rdf:type owl:NamedIndividual ;
+                                   :hardware_has_manufacturer :Amd .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/APRICORN_AEGIS_NX_USBFlashDrive
 :APRICORN_AEGIS_NX_USBFlashDrive rdf:type owl:NamedIndividual ,
                                           :Security ;
@@ -1797,6 +1452,56 @@
 :Amd rdf:type owl:NamedIndividual ,
               :Manufacturer ;
      :manufacturer_has_name "Advanced Micro Devices, Inc." .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen3_2200g
+:Amd_Ryzen3_2200g rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen3_2200ge
+:Amd_Ryzen3_2200ge rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen5_7600
+:Amd_Ryzen5_7600 rdf:type owl:NamedIndividual ;
+                 :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen5_7600x
+:Amd_Ryzen5_7600x rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen7_7700
+:Amd_Ryzen7_7700 rdf:type owl:NamedIndividual ;
+                 :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen7_7700x
+:Amd_Ryzen7_7700x rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen7_7800x3d
+:Amd_Ryzen7_7800x3d rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen9_7900
+:Amd_Ryzen9_7900 rdf:type owl:NamedIndividual ;
+                 :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen9_7900x
+:Amd_Ryzen9_7900x rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Amd .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Amd_Ryzen9_7900x3d
+:Amd_Ryzen9_7900x3d rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Amd .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Apache_Software
@@ -1941,6 +1646,11 @@
          :video_game_has_version 5.2 .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GIGABYTE_Z790_AORUS_ELITE_AX_ATX_LGA1700
+:GIGABYTE_Z790_AORUS_ELITE_AX_ATX_LGA1700 rdf:type owl:NamedIndividual ;
+                                          :hardware_has_manufacturer :Gigabyte .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GODOX_EM68X_RGB_Microphone
 :GODOX_EM68X_RGB_Microphone rdf:type owl:NamedIndividual ,
                                      :BiDirectionalMicrophone ;
@@ -1950,6 +1660,42 @@
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GOM_Player
 :GOM_Player rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GeForce_RTX_3060
+:GeForce_RTX_3060 rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Nvidia ;
+                  :gpu_has_memory 15000 ;
+                  :gpu_has_name "GeForce_RTX_3060" ;
+                  :gpu_has_speed "1320mhz" ;
+                  :gpu_has_video_memory 12288 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GeForce_RTX_3070_Ti
+:GeForce_RTX_3070_Ti rdf:type owl:NamedIndividual ;
+                     :hardware_has_manufacturer :Nvidia ;
+                     :gpu_has_memory 1800 ;
+                     :gpu_has_name "GeForce_RTX_3070_Ti" ;
+                     :gpu_has_speed "1575mhz" ;
+                     :gpu_has_video_memory 8129 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GeForce_RTX_3080_12GB
+:GeForce_RTX_3080_12GB rdf:type owl:NamedIndividual ;
+                       :hardware_has_manufacturer :Nvidia ;
+                       :gpu_has_name "GeForce_RTX_3080_12GB" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GeForce_RTX_4080
+:GeForce_RTX_4080 rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Nvidia ;
+                  :gpu_has_name "GeForce_RTX_4080" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/GeForce_RTX_4090
+:GeForce_RTX_4090 rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Nvidia ;
+                  :gpu_has_name "GeForce_RTX_4090" .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Gen_Digital
@@ -1962,6 +1708,11 @@
 :Gigabyte rdf:type owl:NamedIndividual ,
                    :Manufacturer ;
           :manufacturer_has_name "gigabyte technology" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Gigabyte_UD850GM
+:Gigabyte_UD850GM rdf:type owl:NamedIndividual ;
+                  :hardware_has_manufacturer :Gigabyte .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Google
@@ -2043,10 +1794,163 @@
        :manufacturer_has_name "Intel Corporation" .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Celeron_G6900
+:Intel_Celeron_G6900 rdf:type owl:NamedIndividual ;
+                     :cpu_attaches_to :GIGABYTE_Z790_AORUS_ELITE_AX_ATX_LGA1700 ;
+                     :hardware_has_manufacturer :Intel ;
+                     :cpu_has_cores 2 ;
+                     :cpu_has_name "Intel_Celeron_G6900" ;
+                     :cpu_has_speed 3.4 ;
+                     :cpu_has_threads 2 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-10100
+:Intel_Core_i3-10100 rdf:type owl:NamedIndividual ;
+                     :hardware_has_manufacturer :Intel ;
+                     :has_cache :L3_16mb ;
+                     :cpu_has_cores 4 ;
+                     :cpu_has_name "Intel_Core_i3-10100" ;
+                     :cpu_has_speed 4.3 ;
+                     :cpu_has_threads 8 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-2100
+:Intel_Core_i3-2100 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel ;
+                    :has_cache :L1_3 ;
+                    :cpu_has_cores 2 ;
+                    :cpu_has_speed 3.1 ;
+                    :cpu_has_threads 4 ;
+                    :driver_has_name "Intel_Core_i3-2100" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-3220
+:Intel_Core_i3-3220 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel ;
+                    :has_cache :L1_3 ;
+                    :cpu_has_cores 2 ;
+                    :cpu_has_name "Intel_Core_i3-3220" ;
+                    :cpu_has_speed 3.3 ;
+                    :cpu_has_threads 4 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-3240
+:Intel_Core_i3-3240 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel ;
+                    :has_cache :L1_3 ;
+                    :cpu_has_cores 2 ;
+                    :cpu_has_name "Intel_Core_i3-3240" ;
+                    :cpu_has_speed 3.3 ;
+                    :cpu_has_threads 4 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-4130
+:Intel_Core_i3-4130 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel ;
+                    :has_cache :L1_3 ;
+                    :cpu_has_cores 2 ;
+                    :cpu_has_speed 3.4 ;
+                    :cpu_has_threads 4 ;
+                    :driver_has_name "Intel_Core_i3-4130" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-6100
+:Intel_Core_i3-6100 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-7100
+:Intel_Core_i3-7100 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i3-9100F
+:Intel_Core_i3-9100F rdf:type owl:NamedIndividual ;
+                     :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-650
+:Intel_Core_i5-650 rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-655
+:Intel_Core_i5-655 rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-665k
+:Intel_Core_i5-665k rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-7400
+:Intel_Core_i5-7400 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-750
+:Intel_Core_i5-750 rdf:type owl:NamedIndividual ;
+                   :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-7500
+:Intel_Core_i5-7500 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-8400
+:Intel_Core_i5-8400 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i5-8500
+:Intel_Core_i5-8500 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i7-8500
+:Intel_Core_i7-8500 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i7-8600
+:Intel_Core_i7-8600 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i7-8750
+:Intel_Core_i7-8750 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel ;
+                    :has_cache :L2_9.5mb ;
+                    :cpu_has_cores 6 ;
+                    :cpu_has_name "Intel_Core_i7-8750" ;
+                    :cpu_has_speed 4.1 ;
+                    :cpu_has_threads 12 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_Core_i7-8750h
+:Intel_Core_i7-8750h rdf:type owl:NamedIndividual ;
+                     :hardware_has_manufacturer :Intel ;
+                     :has_cache :L2_9.5mb ;
+                     :cpu_has_cores 6 ;
+                     :cpu_has_name "Intel_Core_i7-8750h" ;
+                     :cpu_has_speed 4.1 ;
+                     :cpu_has_threads 12 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Intel_i3_10100_motherboard
+:Intel_i3_10100_motherboard rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/JetBrains
 :JetBrains rdf:type owl:NamedIndividual ,
                     :Software_Developer ;
            :software_dev_has_name "JetBrains" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/KINGSTON_DDR3_1333Mhz_Desktop_PC_DDR3_8_GB
+:KINGSTON_DDR3_1333Mhz_Desktop_PC_DDR3_8_GB rdf:type owl:NamedIndividual .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/KVIDIO_BLUETOOTH_Headphones
@@ -2078,10 +1982,100 @@
                       :video_game_has_version 2.1 .
 
 
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingston_FURY_Beast_32_GB
+:Kingston_FURY_Beast_32_GB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingston_HyperX_Fury_16_GB
+:Kingston_HyperX_Fury_16_GB rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingston_HyperX_Fury_DDR4_8GB_3200MHZ
+:Kingston_HyperX_Fury_DDR4_8GB_3200MHZ rdf:type owl:NamedIndividual .
+
+
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/Kingstone
 :Kingstone rdf:type owl:NamedIndividual ,
                     :Manufacturer ;
            :manufacturer_has_name "Kingston Technology" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L1_1
+:L1_1 rdf:type owl:NamedIndividual ;
+      :cache_has_level 1 ;
+      :cache_has_size_in_mb 2 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L1_2
+:L1_2 rdf:type owl:NamedIndividual ;
+      :cache_has_level 2 ;
+      :cache_has_size_in_mb 4 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L1_3
+:L1_3 rdf:type owl:NamedIndividual ;
+      :cache_has_level 1 ;
+      :cache_has_size_in_mb 8 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L2_1
+:L2_1 rdf:type owl:NamedIndividual ;
+      :cache_has_level 2 ;
+      :cache_has_size_in_mb 8 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L2_3
+:L2_3 rdf:type owl:NamedIndividual ;
+      :cache_has_level 2 ;
+      :cache_has_size_in_mb 32 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L2_3mb
+:L2_3mb rdf:type owl:NamedIndividual ;
+        :cache_has_level 2 ;
+        :cache_has_size_in_mb 3 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L2_4mb
+:L2_4mb rdf:type owl:NamedIndividual ;
+        :cache_has_level 2 ,
+                         4 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L2_5mb
+:L2_5mb rdf:type owl:NamedIndividual ;
+        :cache_has_level 2 ;
+        :cache_has_size_in_mb 5 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L2_9.5mb
+:L2_9.5mb rdf:type owl:NamedIndividual ;
+          :cache_has_level 2 ;
+          :cache_has_size_in_mb 9.5 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L3_1
+:L3_1 rdf:type owl:NamedIndividual ;
+      :cache_has_level 3 ;
+      :cache_has_size_in_mb 32 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L3_12mb
+:L3_12mb rdf:type owl:NamedIndividual ;
+         :cache_has_level 3 ;
+         :cache_has_size_in_mb 12 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L3_16mb
+:L3_16mb rdf:type owl:NamedIndividual ;
+         :cache_has_level 3 ;
+         :cache_has_size_in_mb 16 .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/L3_20mb
+:L3_20mb rdf:type owl:NamedIndividual ;
+         :cache_has_size_in_mb 20 ,
+                               3 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LANGTU_W1_Keyboard
@@ -2097,8 +2091,8 @@
 :LG_48GQ900_B_Monitor rdf:type owl:NamedIndividual ,
                                :OLED ;
                       :monitor_has_name "LG 48GQ900 B" ;
-                      :monitor_has_size 48 ,
-                                        "3849x2160" .
+                      :monitor_has_resolution "3849x2160" ;
+                      :monitor_has_size 48 .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/LG_ULTRAGEAR_Monitor
@@ -2522,6 +2516,11 @@
              :keyboard_has_layout "QWERTY" ;
              :keyboard_has_name "X9 PERFORMANCE" ;
              :keyboard_has_size "16.8x4.9" .
+
+
+###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/intel_core_i3-8100
+:intel_core_i3-8100 rdf:type owl:NamedIndividual ;
+                    :hardware_has_manufacturer :Intel .
 
 
 ###  http://www.semanticweb.org/pc/ontologies/2023/3/untitled-ontology-4/macOS_Big_Sur
